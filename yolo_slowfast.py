@@ -11,6 +11,7 @@ from pytorchvideo.data.ava import AvaLabeledVideoFramePaths
 from pytorchvideo.models.hub import slowfast_r50_detection
 from deep_sort.deep_sort import DeepSort
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:256"
 
 def tensor_to_numpy(tensor):
     img = tensor.cpu().numpy().transpose((1, 2, 0))

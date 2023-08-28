@@ -1,0 +1,6 @@
+/venv
+/demo
+*.pt
+*.mp4
+*.pyc
+ckpt.*
